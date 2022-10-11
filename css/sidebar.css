@@ -1,0 +1,40 @@
+#sidebar {
+  margin-right: 20px;
+  padding: 20px;
+  width: 20vw;
+  height: 100%;
+  border-radius: 20px;
+}
+
+#sidebar li {
+  display: flex;
+  justify-content: flex-start;
+  margin: 30% 10%;
+}
+
+#sidebar li a {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 3rem;
+  color: var(--color-main);
+}
+
+#sidebar a:hover {
+  color: var(--color-sidebar-hover);
+}
+
+@media screen and (max-width: 1000px) {
+  #sidebar li a {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #sidebar li a {
+    font-size: 1.2rem;
+  }
+
+  #sidebar li {
+    margin: 100% 10%;
+  }
+}

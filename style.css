@@ -1,0 +1,46 @@
+@import url("css/header.css");
+@import url("css/sidebar.css");
+@import url("css/content.css");
+@import url("css/footer.css");
+
+:root {
+  /* Variables */
+  --background-main: hsl(204, 63%, 59%);
+  --border-main: hsl(217, 51%, 11%);
+  --color-main: #0f3e90;
+  --color-sidebar-hover: orange;
+
+  font-size: 62.5%;
+  font-family: "Roboto Mono", monospace;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-main {
+  border: 0.6rem solid var(--border-main);
+}
+
+body {
+  background-color: var(--background-main);
+  height: 400vh;
+}
+
+/* header .header--title {
+  font-size: 32px;
+  font-weight: 600;
+} */
+
+main {
+  display: flex;
+  height: 64vh;
+  width: 100vw;
+  margin-top: 20px;
+}

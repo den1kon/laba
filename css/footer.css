@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  margin-top: 80px;
+  border: 6px solid var(--border-main);
+  border-radius: 20px;
+}
+
+#top {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 75%;
+  padding: 0 7%;
+  background-color: red;
+}
+
+#top ul li a {
+  font-size: 1.4vw;
+}

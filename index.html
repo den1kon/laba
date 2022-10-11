@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Title</title>
+
+    <style>
+      #loader {
+        border: 12px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 12px solid #444444;
+        width: 70px;
+        height: 70px;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .center {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loader" class="center"></div>
+
+    <header id="header" class="border-main">
+      <!-- <h1 class="header--title">Header</h1> -->
+      <img id="logo" src="../images/mario-logo.svg" alt="logo" />
+      <nav id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="sidebar" class="border-main">
+        <ul>
+          <li><a href="#">Головна</a></li>
+          <li><a href="#">Успішність</a></li>
+          <li><a href="#">Контакти</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div id="content">
+        <div id="imageHolder">
+          <img class="image" src="./images/img.jpeg" alt="" />
+          <img class="image" src="./images/img.jpeg" alt="" />
+          <img class="image" src="./images/img.jpeg" alt="" />
+          <img class="image" src="./images/img.jpeg" alt="" />
+          <img class="image" src="./images/img.jpeg" alt="" />
+          <img class="image" src="./images/img.jpeg" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="top">
+        <ul>
+          <li>Структура</li>
+          <li><a href="#">Ректорат</a></li>
+          <li><a href="#">Вчена рада</a></li>
+          <li><a href="#">Департаменти</a></li>
+        </ul>
+
+        <ul>
+          <li>Можливості освіти</li>
+          <li><a href="#">Дистанційна освіта</a></li>
+          <li><a href="#">Академічна мобільність</a></li>
+          <li><a href="#">Перепідготвка (друга вища освіта)</a></li>
+        </ul>
+        <ul>
+          <li>Для користувачів</li>
+          <li><a href="#">Школяру</a></li>
+          <li><a href="#">Вступнику</a></li>
+          <li><a href="#">Першокурсники</a></li>
+        </ul>
+      </div>
+
+      <div id="bottom"></div>
+    </footer>
+
+    <script>
+      // document.onreadystatechange = async function () {
+      //   if (document.readyState !== "complete") {
+      //     document.querySelector("body").style.visibility = "hidden";
+      //     document.querySelector("#loader").style.visibility = "visible";
+      //   } else {
+      //     document.querySelector("#loader").style.display = "none";
+      //     document.querySelector("body").style.visibility = "visible";
+      //   }
+
+      document.onreadystatechange = async function () {
+        if (document.readyState !== "complete") {
+          document.querySelector("body").style.visibility = "hidden";
+          document.querySelector("#loader").style.visibility = "visible";
+        }
+        setInterval(() => {
+          document.querySelector("#loader").style.display = "none";
+          document.querySelector("body").style.visibility = "visible";
+        }, 500);
+      };
+    </script>
+  </body>
+</html>
