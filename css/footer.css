@@ -1,9 +1,9 @@
 footer {
   display: flex;
   flex-direction: column;
-  height: 15vh;
-  margin-top: 80px;
-  border: 6px solid var(--border-main);
+  height: 8vh;
+  margin-top: 8vh;
+  border: 3px solid var(--border-main);
   border-radius: 20px;
 }
 
